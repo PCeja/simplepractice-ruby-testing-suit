@@ -10,6 +10,10 @@ RSpec.describe 'Tasks' do
         tasks_page.load
         tasks_page.create_task(unique_task_name)
         expect(tasks_page.has_task?(unique_task_name)).to be true
+
+        tasks_page.complete_task(unique_task_name)
+        expect(tasks_page.task_completed?(unique_task_name)).to be true
+        expect(tasks_page.task_checked?(unique_task_name)).to be true
     end
 
 end
