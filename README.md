@@ -30,6 +30,11 @@ SimplePractice POM testing suit that uses Ruby, RSpec and Capybara.
 - Auto-expires sessions after 4 hours for security -> Since I don't know the real expiration value. -> This can be personalized in the project. 
 - I used `capybara-sessionkeeper` gem for reliable cookie handling
 
+## 👥 Contributing
+
+### Code Ownership
+This project uses a [CODEOWNERS](.github/CODEOWNERS) file to automatically assign reviewers for pull requests.
+
 ## 🔧 Prerequisites to run the tests
 Before getting started, ensure you have the following installed:
 
@@ -54,11 +59,19 @@ This project uses environment variables to securely store credentials. **Never c
 
 ### 📝 Create your [.env](/simplepractice-ruby-testing-suit/.env:) file
 
-1. You can also use the .env.example I've provided in the repo -> Update the EAMIL, PASSWORD and BASE_URL 
+1. Copy the .env example I've provided in the repo
 
 ```bash
 cp .env.example .env
 ```
+
+2. Update (With target environment values):
+
+    ```EAMIL``` 
+
+    ```PASSWORD``` 
+
+    ```BASE_URL``` 
 
 ### 🧪 Running Tests
 
@@ -116,7 +129,30 @@ simplepractice-ruby-testing-suit/
 └── README.md
 ```
 
-## 👥 Contributing
+## 👩‍💻 Planned enhancements for the testing framework:
 
-### Code Ownership
-This project uses a [CODEOWNERS](.github/CODEOWNERS) file to automatically assign reviewers for pull requests.
+### 🧹 Test Data Cleanup
+- [ ] Implement automatic cleanup of test data after successful test execution
+- [ ] Add `after` hooks to delete created entities (tasks, appointments, etc.)
+- [ ] Create cleanup utilities for orphaned test data
+- [ ] Support rollback strategies for failed test runs
+
+### 🌐 Multi-Platform Support
+- [ ] Add Firefox browser support via GeckoDriver
+- [ ] Add Safari browser support via SafariDriver
+- [ ] Configure browser selection via environment variables (`BROWSER=firefox`)
+- [ ] Implement cross-browser test matrix for CI/CD pipelines
+- [ ] Add mobile browser emulation (Chrome DevTools)
+
+### 👥 Multi-User Session Management
+- [ ] Support multiple user session storage (e.g., `tmp/session_admin.cookies`, `tmp/session_client.cookies`)
+- [ ] Implement user role-based session switching within tests
+- [ ] Add session isolation for parallel test execution
+- [ ] Create session factory for dynamic user provisioning
+- [ ] Support concurrent multi-user interaction scenarios
+
+### 🔧 Additional Enhancements
+- [ ] Add CI/CD integration (GitHub Actions)
+- [ ] Implement test reporting (Allure, HTML reports)
+- [ ] Add screenshot capture on test failure
+- [ ] Create reusable test data factories with Faker
