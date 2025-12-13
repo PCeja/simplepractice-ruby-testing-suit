@@ -30,6 +30,11 @@ SimplePractice POM testing suit that uses Ruby, RSpec and Capybara.
 - Auto-expires sessions after 4 hours for security -> Since I don't know the real expiration value. -> This can be personalized in the project. 
 - I used `capybara-sessionkeeper` gem for reliable cookie handling
 
+## 👥 Contributing
+
+### Code Ownership
+This project uses a [CODEOWNERS](.github/CODEOWNERS) file to automatically assign reviewers for pull requests.
+
 ## 🔧 Prerequisites to run the tests
 Before getting started, ensure you have the following installed:
 
@@ -111,6 +116,8 @@ for i in {1..20}; do echo "Run #$i"; bundle exec rspec spec/features/task_lifecy
 ### 📁 Project Structure
 ```
 simplepractice-ruby-testing-suit/
+├── .github/
+│   └── CODEOWNERS         # Code ownership for PR reviews
 ├── spec/
 │   ├── features/          # Feature/integration tests
 │   ├── support/           # Page objects, helpers, config
@@ -121,6 +128,7 @@ simplepractice-ruby-testing-suit/
 ├── Gemfile                # Ruby dependencies
 └── README.md
 ```
+
 ## 👩‍💻 Planned enhancements for the testing framework:
 
 ### 🧹 Test Data Cleanup
