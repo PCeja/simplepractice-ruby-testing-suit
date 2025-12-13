@@ -5,9 +5,12 @@
 </p>
 
 <h1 align='center'>
-  Welcome! This is a SimplePractice Ruby Testing Suit Example</h1>
+  Welcome!
+  <br>
+  This is a SimplePractice Ruby Testing Suit Example
+</h1>
 
-  ## 📝 Summary
+## 📝 Summary
 SimplePractice POM testing suit that uses Ruby, RSpec and Capybara.
 
 ### Tech Stack
