@@ -103,6 +103,8 @@ for i in {1..20}; do echo "Run #$i"; bundle exec rspec spec/features/task_lifecy
 ### 📁 Project Structure
 ```
 simplepractice-ruby-testing-suit/
+├── .github/
+│   └── CODEOWNERS         # Code ownership for PR reviews
 ├── spec/
 │   ├── features/          # Feature/integration tests
 │   ├── support/           # Page objects, helpers, config
@@ -113,3 +115,8 @@ simplepractice-ruby-testing-suit/
 ├── Gemfile                # Ruby dependencies
 └── README.md
 ```
+
+## 👥 Contributing
+
+### Code Ownership
+This project uses a [CODEOWNERS](.github/CODEOWNERS) file to automatically assign reviewers for pull requests.
