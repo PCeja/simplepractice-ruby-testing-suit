@@ -1,2 +1,8 @@
-# Used by dotenv library to load environment variables.
+# Environment variables
 .env
+
+# Session cookies
+tmp/
+
+# macOS
+.DS_Store
