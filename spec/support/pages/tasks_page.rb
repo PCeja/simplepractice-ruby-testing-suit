@@ -21,4 +21,24 @@ class TasksPage < BasePage
   def has_task?(title)
     page.has_content?(title)
   end
+
+  def complete_task(title)
+    task_item(title).find('label').click
+  end
+
+  def task_completed?(title)
+    # Button has the 'is-completed' class task completed
+    task_item(title).has_css?('button.is-completed')
+  end
+
+  def task_checked?(title)
+    # Checked state shows a .checked-circle SVG icon
+    task_item(title).has_css?('.checked-circle')
+  end
+
+  private
+
+  def task_item(title)
+    find('.list-item', text: title)
+  end
 end
