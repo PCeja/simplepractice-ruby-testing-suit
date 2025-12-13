@@ -7,6 +7,7 @@ gem 'rspec'
 gem 'capybara'
 gem 'selenium-webdriver'
 gem 'site_prism' # Page Object Model
+gem 'capybara-sessionkeeper' # Session/cookie management
 
 #Configurations & Utilities
 gem 'dotenv' # Environment variables security
