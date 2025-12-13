@@ -54,11 +54,19 @@ This project uses environment variables to securely store credentials. **Never c
 
 ### 📝 Create your [.env](/simplepractice-ruby-testing-suit/.env:) file
 
-1. You can also use the .env.example I've provided in the repo -> Update the EAMIL, PASSWORD and BASE_URL 
+1. Copy the .env example I've provided in the repo
 
 ```bash
 cp .env.example .env
 ```
+
+2. Update (With target environment values):
+
+    ```EAMIL``` 
+
+    ```PASSWORD``` 
+
+    ```BASE_URL``` 
 
 ### 🧪 Running Tests
 
