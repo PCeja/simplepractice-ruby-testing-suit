@@ -121,3 +121,30 @@ simplepractice-ruby-testing-suit/
 ├── Gemfile                # Ruby dependencies
 └── README.md
 ```
+## 👩‍💻 Planned enhancements for the testing framework:
+
+### 🧹 Test Data Cleanup
+- [ ] Implement automatic cleanup of test data after successful test execution
+- [ ] Add `after` hooks to delete created entities (tasks, appointments, etc.)
+- [ ] Create cleanup utilities for orphaned test data
+- [ ] Support rollback strategies for failed test runs
+
+### 🌐 Multi-Platform Support
+- [ ] Add Firefox browser support via GeckoDriver
+- [ ] Add Safari browser support via SafariDriver
+- [ ] Configure browser selection via environment variables (`BROWSER=firefox`)
+- [ ] Implement cross-browser test matrix for CI/CD pipelines
+- [ ] Add mobile browser emulation (Chrome DevTools)
+
+### 👥 Multi-User Session Management
+- [ ] Support multiple user session storage (e.g., `tmp/session_admin.cookies`, `tmp/session_client.cookies`)
+- [ ] Implement user role-based session switching within tests
+- [ ] Add session isolation for parallel test execution
+- [ ] Create session factory for dynamic user provisioning
+- [ ] Support concurrent multi-user interaction scenarios
+
+### 🔧 Additional Enhancements
+- [ ] Add CI/CD integration (GitHub Actions)
+- [ ] Implement test reporting (Allure, HTML reports)
+- [ ] Add screenshot capture on test failure
+- [ ] Create reusable test data factories with Faker
