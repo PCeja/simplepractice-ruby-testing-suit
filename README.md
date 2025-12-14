@@ -25,9 +25,9 @@ SimplePractice POM testing suit that uses Ruby, RSpec and Capybara.
 
 ### Key Features
 **🔐 Cookie-Based Session Management**
-- Login is performed once and cookies are persisted locally:  
+- Login is performed once and cookies are persisted lolcally:  
 - Subsequent test runs reuse cached session (~5s vs ~13s per run)
-- Auto-expires sessions after 4 hours for security -> Since I don't know the real expiration value. -> This can be personalized in the project. 
+- Auto-expires sessions after 0.5 hours for security -> Since I don't know the real expiration value. -> This can be personalized in the project -> ```SESSION_MAX_AGE_HOURS```
 - I used `capybara-sessionkeeper` gem for reliable cookie handling
 
 ## 👥 Contributing
