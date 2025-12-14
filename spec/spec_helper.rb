@@ -22,7 +22,7 @@ Capybara.app_host = ENV['BASE_URL']
 
 # Session file with persisted cookies
 SESSION_FILE = 'tmp/session.cookies'
-SESSION_MAX_AGE_HOURS = 12  # Re-login after this many hours
+SESSION_MAX_AGE_HOURS = 0.5  # Re-login after this many hours
 
 def session_valid?
     return false unless File.exist?(SESSION_FILE)
