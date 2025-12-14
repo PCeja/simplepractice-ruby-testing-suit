@@ -30,7 +30,8 @@
 - [ ] Create **with duplicated name** and verify it's shown in the list of tasks correctly
 
 ### Complete a Task:
-- [ ] **Complete a task**: Mark as completed and verify
+- [ ] **Complete an existent task**: Mark as completed and verify
+- [ ] **Complete a new task**: Mark as completed and verify
     - [ ] Checkbox is shown as checked 
     - [ ] The checked state is persisted
     - [ ] Completed date it's shown correctly (Example: Dec 12)
