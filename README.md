@@ -131,6 +131,10 @@ simplepractice-ruby-testing-suit/
 
 ## 👩‍💻 Planned enhancements for the testing framework:
 
+### 👷‍♀️ POM
+- [ ] 'Add task' button click can be extracted as a separate action
+- [ ] create_task()' action can be updated to support all tasks attributes: 'Task name'(only mandatory), 'Description', 'Due on', 'Priority', 'Client', 'Assigned to', 'Attachments' 
+
 ### 🧹 Test Data Cleanup
 - [ ] Implement automatic cleanup of test data after successful test execution
 - [ ] Add `after` hooks to delete created entities (tasks, appointments, etc.)
