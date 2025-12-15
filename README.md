@@ -149,13 +149,14 @@ simplepractice-ruby-testing-suit/
 - [ ] Add mobile browser emulation (Chrome DevTools)
 
 ### 👥 Multi-User Session Management
-- [ ] Support multiple user session storage (e.g., `tmp/session_admin.cookies`, `tmp/session_client.cookies`)
+- [ ] Support multiple user session storage (e.g., `tmp/session_admin.cookies`, `tmp/session_client.cookies`) -> Ideally, authentication should be done via API(instead of UI) or long-lived tokens then session stored
 - [ ] Implement user role-based session switching within tests
 - [ ] Add session isolation for parallel test execution
 - [ ] Create session factory for dynamic user provisioning
 - [ ] Support concurrent multi-user interaction scenarios
 
 ### 🔧 Additional Enhancements
+- [ ] Mobile platform support
 - [ ] Add CI/CD integration (GitHub Actions)
 - [ ] Implement test reporting (Allure, HTML reports)
 - [ ] Add screenshot capture on test failure
