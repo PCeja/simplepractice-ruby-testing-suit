@@ -110,7 +110,7 @@ rm -f tmp/session.cookies && bundle exec rspec
 #### ✅ Verification & Stress Testing
 I ran the following stress test command to ensure the fix is stable:
 ```bash
-for i in {1..20}; do echo "Run #$i"; bundle exec rspec spec/features/task_lifecycle_spec.rb || break; done
+for i in {1..20}; do echo "Run #$i"; bundle exec rspec spec/features/tasks_spec.rb || break; done
 ```
 
 ### 📁 Project Structure
