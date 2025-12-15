@@ -24,7 +24,7 @@
 ## Test Checklists:
 ### Create a Task:
 - [x] **Create mandatory only** -> 'Task name' and verify it's shown in the list of tasks correctly  
-- [ ] **Create with all attributes** -> 'Task name', 'Description', 'Due on', 'Priority', 'Client', 'Assigned to', 'Attachments' and verify it's shown in the list of tasks correctly
+- [x] **Create with all attributes** -> 'Task name', 'Description', 'Due on', 'Priority', 'Client', 'Assigned to', 'Attachments' and verify it's shown in the list of tasks correctly
 - [x] **Create (Multiple Team Members)** for 'Assigned to' several team members simultaneously and verify it's shown in the list of tasks correctly
 - [x] Create **with Attachments** and verify it's shown in the list of tasks correctly
 - [x] Create **with duplicated name** and verify it's shown in the list of tasks correctly
@@ -65,7 +65,7 @@
     - [ ] The checked state is persisted
     - [ ] Completed date it's shown correctly (Example: Dec 12)
     
-- [x] **Un-checked a completed task**: Mark as incompleted and verify
+      **Un-checked a completed task**: Mark as incompleted and verify
     - [ ] Checkbox gets un-checked 
     - [ ] The un-checked state persisted correctly
 
