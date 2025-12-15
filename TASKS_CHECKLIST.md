@@ -23,11 +23,11 @@
 
 ## Test Checklists:
 ### Create a Task:
-- [ ] **Create mandatory only** -> 'Task name' and verify it's shown in the list of tasks correctly  
+- [*] **Create mandatory only** -> 'Task name' and verify it's shown in the list of tasks correctly  
 - [ ] **Create with all attributes** -> 'Task name', 'Description', 'Due on', 'Priority', 'Client', 'Assigned to', 'Attachments' and verify it's shown in the list of tasks correctly
-- [ ] **Create (Multiple Team Members)** for 'Assigned to' several team members simultaneously and verify it's shown in the list of tasks correctly
-- [ ] Create **with Attachments** and verify it's shown in the list of tasks correctly
-- [ ] Create **with duplicated name** and verify it's shown in the list of tasks correctly
+- [*] **Create (Multiple Team Members)** for 'Assigned to' several team members simultaneously and verify it's shown in the list of tasks correctly
+- [*] Create **with Attachments** and verify it's shown in the list of tasks correctly
+- [*] Create **with duplicated name** and verify it's shown in the list of tasks correctly
 
     **Create a Task - Observation 1**: When entering empty spaces in 'Task name' the validation error 'This field can't be blank' is not shown and the BE returns a '422 Unprocessable Content'.
 
@@ -59,13 +59,13 @@
 
 
 ### Complete a Task:
-- [ ] **Complete an existent task**: Mark as completed and verify
-- [ ] **Complete a new task**: Mark as completed and verify
+- [*] **Complete an existent task**: Mark as completed and verify
+- [*] **Complete a new task**: Mark as completed and verify
     - [ ] Checkbox is shown as checked 
     - [ ] The checked state is persisted
     - [ ] Completed date it's shown correctly (Example: Dec 12)
     
-- [ ] **Un-checked a completed task**: Mark as incompleted and verify
+- [*] **Un-checked a completed task**: Mark as incompleted and verify
     - [ ] Checkbox gets un-checked 
     - [ ] The un-checked state persisted correctly
 
