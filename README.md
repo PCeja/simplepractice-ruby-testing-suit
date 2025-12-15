@@ -25,9 +25,9 @@ SimplePractice POM testing suit that uses Ruby, RSpec and Capybara.
 
 ### Key Features
 **🔐 Cookie-Based Session Management**
-- Login is performed once and cookies are persisted locally:  
+- Login is performed once and cookies are persisted lolcally:  
 - Subsequent test runs reuse cached session (~5s vs ~13s per run)
-- Auto-expires sessions after 4 hours for security -> Since I don't know the real expiration value. -> This can be personalized in the project. 
+- Auto-expires sessions after 0.5 hours for security -> Since I don't know the real expiration value. -> This can be personalized in the project -> ```SESSION_MAX_AGE_HOURS```
 - I used `capybara-sessionkeeper` gem for reliable cookie handling
 
 ## 👥 Contributing
@@ -131,6 +131,10 @@ simplepractice-ruby-testing-suit/
 
 ## 👩‍💻 Planned enhancements for the testing framework:
 
+### 👷‍♀️ POM
+- [ ] 'Add task' button click can be extracted as a separate action
+- [ ] create_task()' action can be updated to support all tasks attributes: 'Task name'(only mandatory), 'Description', 'Due on', 'Priority', 'Client', 'Assigned to', 'Attachments' 
+
 ### 🧹 Test Data Cleanup
 - [ ] Implement automatic cleanup of test data after successful test execution
 - [ ] Add `after` hooks to delete created entities (tasks, appointments, etc.)
@@ -145,13 +149,14 @@ simplepractice-ruby-testing-suit/
 - [ ] Add mobile browser emulation (Chrome DevTools)
 
 ### 👥 Multi-User Session Management
-- [ ] Support multiple user session storage (e.g., `tmp/session_admin.cookies`, `tmp/session_client.cookies`)
+- [ ] Support multiple user session storage (e.g., `tmp/session_admin.cookies`, `tmp/session_client.cookies`) -> Ideally, authentication should be done via API(instead of UI) or long-lived tokens then session stored
 - [ ] Implement user role-based session switching within tests
 - [ ] Add session isolation for parallel test execution
 - [ ] Create session factory for dynamic user provisioning
 - [ ] Support concurrent multi-user interaction scenarios
 
 ### 🔧 Additional Enhancements
+- [ ] Mobile platform support
 - [ ] Add CI/CD integration (GitHub Actions)
 - [ ] Implement test reporting (Allure, HTML reports)
 - [ ] Add screenshot capture on test failure
